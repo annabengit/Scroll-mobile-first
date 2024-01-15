@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Hind+Vadodara&family=Poppins:wght@600&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@700&family=Poppins:wght@600&display=swap");
+
+.directory {
+  background-color: #000000;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  background-color: #fff;
+  padding-top: 30px;
+  width: auto;
+}
+
+.header-background {
+  background-color: #0a0a0a;
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  min-height: 100px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-title {
+  color: #fff;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.navigation-title {
+  font-size: 40px;
+  padding-top: 100px;
+  padding-bottom: 70px;
+}
+.container {
+  width: auto;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.sub-header {
+  font-size: 20px;
+  font-weight: 900;
+  font-family: "Hind Vadodara", sans-serif;
+  padding-bottom: 20px;
+  color: #000000;
+  line-height: 20px;
+  letter-spacing: -1px;
+}
+
+.text {
+  font-size: 16px;
+  font-family: "Hind Vadodara", sans-serif;
+  color: #5c5d5f;
+  line-height: 25px;
+}
+.content-text {
+  padding-bottom: 15px;
+}
+
+.bold {
+  font-weight: bold;
+  margin-bottom: 0;
+  padding-top: 15px;
+  padding-bottom: 0;
+}
+
+.list-item {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.footer {
+  background-color: #0a0a0a;
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  min-height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  left: 0;
+  bottom: 0;
+}
+
+.footer-text {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+  color: #d1d1d1;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
