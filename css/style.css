@@ -7,6 +7,7 @@
 .directory {
   background-color: #000000;
 }
+
 .menu {
   display: flex;
   flex-direction: column;
@@ -92,6 +93,7 @@
   align-items: center;
   left: 0;
   bottom: 0;
+  position: fixed;
 }
 
 .footer-text {
@@ -104,7 +106,7 @@
   font-size: 12px;
 }
 
-.accordion {
+/* .accordion {
   background-color: white;
   color: rgb(0, 0, 0, 0.8);
   cursor: pointer;
@@ -130,11 +132,8 @@
 }
 
 .panel {
-  padding: 0 18px;
-  background-color: white;
-  display: none;
-  overflow: hidden;
   background-color: #f1f7f5;
+  display: none;
   padding: 0 2rem 2.5rem 2rem;
 }
 
@@ -151,4 +150,52 @@
 
 .faq.active {
   border: none;
+  transition: max-height 1.4s ease;
 }
+
+.rotate-icon {
+  transform: rotate(180deg);
+  transition: 0.4s linear;
+} */
+
+/* .slide {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease-out;
+} */
+
+/* .panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+} */
+
+.spinner {
+  animation: spin 1s linear infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader-img {
+  height: 180px;
+  width: 180px;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.inline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* .center {
+  flex: left;
+} */
+/* .spinner i {
+  height: 100px;
+  width: 250px;
+} */

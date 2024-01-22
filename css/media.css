@@ -51,4 +51,8 @@
   .footer-text {
     font-size: 15px;
   }
+  .accordion {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }
