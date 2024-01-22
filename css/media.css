@@ -55,4 +55,7 @@
     padding-left: 100px;
     padding-right: 100px;
   }
+  .wrapper {
+    padding-bottom: 150px;
+  }
 }

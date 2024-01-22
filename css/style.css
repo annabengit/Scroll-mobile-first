@@ -4,6 +4,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@700&family=Poppins:wght@600&display=swap");
 
+/* Directory page styles */
 .directory {
   background-color: #000000;
 }
@@ -19,6 +20,7 @@
   width: auto;
 }
 
+/* General styles */
 .header-background {
   background-color: #0a0a0a;
   background-size: 100vw 100vh;
@@ -102,100 +104,81 @@
   height: auto;
   width: 100%;
   color: #d1d1d1;
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-family: "Hind Vadodara", sans-serif;
   font-size: 12px;
 }
 
-/* .accordion {
-  background-color: white;
-  color: rgb(0, 0, 0, 0.8);
+/* Styles of FAQ page */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+}
+/.accordion {
+  max-width: 800px;
+}
+
+.accordion .contentBx {
+  position: relative;
+  /* margin: 10px 20px; */
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.accordion .contentBx .label {
+  position: relative;
+  padding: 10px;
+  background: none;
+  color: black;
   cursor: pointer;
-  font-size: 1.2rem;
-  width: 100%;
-  padding: 2rem 2.5rem;
-  border: none;
-  outline: none;
-  transition: 0.4s;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-weight: bold;
+  border-top: #e6e6e6 1px solid;
+  height: 50px;
 }
 
-.accordion i {
-  font-size: 1.6rem;
+.accordion .contentBx .label::before {
+  content: "";
+  background-image: url("../images/arrow.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  padding-right: 10px;
 }
 
-.active,
-.accordion:hover {
-  background-color: #f1f7f5;
-}
-
-.panel {
-  background-color: #f1f7f5;
-  display: none;
-  padding: 0 2rem 2.5rem 2rem;
-}
-
-.panel p {
-  color: rgba(0, 0, 0, 0.7);
-  font-size: 1.2rem;
-  line-height: 1.4;
-}
-
-.faq {
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  margin: 10px 0;
-}
-
-.faq.active {
-  border: none;
-  transition: max-height 1.4s ease;
-}
-
-.rotate-icon {
+.accordion .contentBx.active .label::before {
   transform: rotate(180deg);
-  transition: 0.4s linear;
-} */
+  transform-origin: 6px 6px;
+}
 
-/* .slide {
-  max-height: 0;
+.accordion .contentBx .content {
+  position: relative;
+  background: #fff;
+  height: 0;
   overflow: hidden;
-  transition: max-height 1s ease-out;
-} */
+  transition: 0.5s;
+  overflow-y: auto;
+  border-top: #f3f2f2 1px solid;
+}
 
-/* .panel {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-out;
-} */
+.accordion .contentBx.active .content {
+  height: auto;
+  padding: 10px;
+}
 
-.spinner {
-  animation: spin 1s linear infinite;
+.question {
+  color: #333333;
+  font-size: 18px;
+  font-family: "Hind Vadodara", sans-serif;
+}
+
+.answer {
+  color: #777777;
+  font-size: 18px;
+  font-family: "Hind Vadodara", sans-serif;
+}
+
+.label {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
-
-.loader-img {
-  height: 180px;
-  width: 180px;
-}
-@keyframes spin {
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-.inline {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-/* .center {
-  flex: left;
-} */
-/* .spinner i {
-  height: 100px;
-  width: 250px;
-} */
